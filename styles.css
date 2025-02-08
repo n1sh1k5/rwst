@@ -1,0 +1,134 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+     background-image: url('k.jpg'); /* Replace with image URL */
+      background-size: cover; /* Ensures the image covers the entire screen */
+      background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #03859a; /* blue text color */
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 28px;
+    color: #ffffff;  /* blue */
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* Chat container */
+  .chat-container {
+    width: 500px;
+    height: 650px;
+    background: rgb(3, 107, 188);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Chatbox */
+  .chat-box {
+    flex-grow: 1;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #193e61; /* Light Purple */
+    border-radius: 8px;
+    
+    /* Scrollbar for Edge, Chrome, and Safari */
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #3498db #1a1a2e; /* Thumb color and track color */
+}
+
+/* WebKit-based Scrollbar Styling */
+chat-box::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+chat-box::-webkit-scrollbar-track {
+    background: #1a1a2e; /* Dark background for track */
+    border-radius: 8px;
+}
+
+chat-box::-webkit-scrollbar-thumb {
+    background: #3498db; /* Scrollbar thumb color */
+    border-radius: 8px;
+}
+
+chat-box::-webkit-scrollbar-thumb:hover {
+    background: #2980b9; /* Hover effect */
+}
+
+  
+  /* User Input Section */
+  .user-input {
+    display: flex;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #243e4c;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 20%;
+    background-color: #210367;  /* Gold */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #DAA520;  /* Darker Gold */
+  }
+  
+  /* Message bubbles */
+  .user-message {
+    text-align: right;
+    margin: 10px;
+  }
+  
+  .bot-message {
+    text-align: left;
+    margin: 10px;
+    background-color: #18004f;  /* Light Purple for bot messages */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .bot-message span {
+    font-weight: bold;
+  }
+  
+  .user-message {
+    background-color: #e8eaf6;  /* Light Blue for user messages */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
